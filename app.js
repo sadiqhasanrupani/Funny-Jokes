@@ -14,9 +14,13 @@ const addNewJoke = async () => {
 
 // dadjoke api
 const dadsJoke = async () => {
-  const config = { headers: { Accept: "application/json" } };
-  const response = await axios.get("https://icanhazdadjoke.com/", config);
-  return response.data.joke;
+  try {
+    const config = { headers: { Accept: "application/json" } };
+    const response = await axios.get("https://icanhazdadjoke.com/", config);
+    return response.data.joke;
+  } catch {
+    return "No Jokes Right Now"
+  }
 };
 
 for (let i = 0; i < 10; i++) {
