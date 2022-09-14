@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Luckiest+Guy&family=Rampart+One&family=Rubik+Moonrocks&family=Titan+One&display=swap");
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 1s ease-in-out all;
+  list-style: none;
+  color: rgb(60, 58, 80);
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffcdb2;
+}
+
+section {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.h1 {
+  font-family: "Rampart One", cursive;
+  width: 100%;
+  padding: 20px;
+  font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1::after {
+  content: "";
+  position: relative;
+  width: 13%;
+  height: 3px;
+  border-radius: 10px;
+  box-shadow: 3px 2px 2px;
+  border: 3px solid;
+}
+
+h2 {
+  width: 100%;
+  font-family: "Titan One", cursive;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-shadow: 0px 0px 2px;
+}
+
+li {
+  font-size: large;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Luckiest Guy", cursive;
+  transition: 2s ease-in-out all;
+}
+
+div {
+  margin: 10px;
+  padding: 10px;
+}
+
+.joke-container {
+  border: 2px solid rgb(60, 58, 80);
+  box-shadow: 3px 2px 2px;
+  padding: 40px;
+  padding-left: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#reset-btn {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background: transparent;
+  padding: 8px 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in all;
+}
+#reset-btn:hover{
+  background-color: #ffbdae;
+  color: rgb(12, 11, 29);
+  font-weight: 800;
+}
+#reset-btn:active{
+  background-color: #ffbdae;
+  color: rgb(12, 11, 29);
+  font-weight: 800;
+}
+
+.btn-container {
+  text-align: center;
+}
+
+@media (max-width: 768px){
+  .h1::after {
+    width: 28%;
+    height: 3px;
+  }
+}
